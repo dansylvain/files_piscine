@@ -1,0 +1,32 @@
+#!/bin/bash
+echo 'nom du fichier'
+read who
+echo 'prototype'
+read who2
+echo  "/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   newfile.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dsylvain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/24 14:57:40 by dsylvain          #+#    #+#             */
+/*   Updated: 2023/07/24 15:13:31 by dsylvain         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include \"../../lib/bib42.h\"
+
+$who2
+
+$who2
+{
+        return (0);
+}
+
+int main(void)
+{
+        printf(\"%i\", $who());
+        return (0);
+}" > $who.c
+vim $who.c
